@@ -1,0 +1,10 @@
+angle from 0-180
+skew from 0-85 (90 is identical to 0)
+sides = 3
+mirror y/n
+pointy line y/n
+fractal 0/1 (upper just adding fuzz)
+
+R code:
+
+combos <- expand.grid(angle = seq(0, 180, 45), skew = seq(0, 60, 20), sides = 3, mirror = c(0,1), pointy = 0, fractal = c(0,1))
